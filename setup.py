@@ -14,7 +14,7 @@ ext_modules = [
     Extension(name='fst._fst',
         sources=['fst/_fst.cpp'],
         libraries=['fst'],
-        extra_compile_args=['-O2'],
+        extra_compile_args=['-std=c++11'],
         include_dirs=INC,
         library_dirs=LIB)
 ]
@@ -48,7 +48,7 @@ Example usage::
 
 setup(
     name='pyfst',
-    version='0.2.3',
+    version='0.2.4',
     url='http://pyfst.github.io',
     author='Victor Chahuneau',
     description='A Python interface to OpenFst.',

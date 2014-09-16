@@ -6,7 +6,7 @@ Documentation: http://pyfst.github.io
 
 ## Installation
 
-1. Install OpenFst 1.3
+1. Install OpenFst 1.4.1
 2. `pip install pyfst` (do not try installing directly from the git repository)
 
 ## Basic Usage
