@@ -478,7 +478,7 @@ cdef class {{fst}}(_Fst):
         cdef {{fst}} result = {{fst}}(isyms=self.isyms, osyms=other.osyms)
         libfst.Compose(self.fst[0], other.fst[0], result.fst)
         if (result.fst.Properties(libfst.kError, True)):
-            raise ValueError('Result of libfst.Compose has property kError')
+            raise ValueError('Result of libfst.Compose has property kError: were input/output arcs properly sorted?')
         return result
 
     def __rshift__({{fst}} x, {{fst}} y):
