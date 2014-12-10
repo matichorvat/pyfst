@@ -1,0 +1,22 @@
+{
+  "types": [
+    {
+      "arc": "StdArc",
+      "convert": "LogToStd",
+      "fst": "StdVectorFst",
+      "other": "Log",
+      "semiring": "tropical",
+      "state": "StdState",
+      "weight": "TropicalWeight"
+    },
+    {
+      "arc": "LogArc",
+      "convert": "StdToLog",
+      "fst": "LogVectorFst",
+      "other": "Std",
+      "semiring": "log",
+      "state": "LogState",
+      "weight": "LogWeight"
+    }
+  ]
+}

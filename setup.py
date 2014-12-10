@@ -14,7 +14,7 @@ ext_modules = [
     Extension(name='fst._fst',
         sources=['fst/_fst.cpp', 'fst/init_openfst.cpp'],
         libraries=['fst'],
-        extra_compile_args=['-std=c++11'],
+        extra_compile_args=['-O2'],
         include_dirs=INC,
         library_dirs=LIB)
 ]
